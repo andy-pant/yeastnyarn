@@ -3,7 +3,7 @@ body {
 }
 
 /* @group Nav Bar*/
-ul.topnav {
+.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -16,12 +16,8 @@ ul.topnav {
   font-family: Optima, sans-serif;
 }
 
-ul.topnav li {
-  float: left;
-  text-align: center;
-}
-
-ul.topnav li a {
+.topnav a {
+  float:  left;
   display: block;
   colour: white;
   text-align: center;
@@ -29,19 +25,16 @@ ul.topnav li a {
   width: 20%;
 }
 
-ul.topnav li a:hover:not(.active) {
+.topnav a:hover:not(.active) {
   background-color: #57034A;
 }
 
-ul.topnav li a.active {
-  background-color: #57034A;
+.topnav a.active {
+  background-color: #ffb200;
   border: white;
   color: white;
 }
 
-ul.topnav li.right {
-	float: right;
-}
 
 @media screen and (max-width: 600px) {
   ul.topnav li.right, 
@@ -80,7 +73,7 @@ h3 {
 }
 
 p {
-	color: white;
+	color: black;
 	font-family: Optima, sans-serif;
 }
 
