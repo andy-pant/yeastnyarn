@@ -10,7 +10,7 @@
 nav {
 	float:right;
 	position: fixed;
-	width: 100%;
+	width: 90%;
     height: 50px;
     background-color: #57034A;
     font-family: Optima, sans-serif;
@@ -18,7 +18,7 @@ nav {
 
 .logo img{
 	float:left;
-	height: 50px;
+	width: 10%;
 	}
 
 ul {
@@ -29,7 +29,7 @@ ul {
 }
 
 ul li{
-  float: right;
+  float: left;
 }
 
 ul li a{
@@ -38,7 +38,7 @@ ul li a{
   font-size:16px;
   text-decoration: none;
   color: white; 
-  font-family:raleway;
+  font-family: Optima, sans-serif;
 }
 
 ul li a:hover{
