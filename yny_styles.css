@@ -18,25 +18,33 @@ nav {
 
 .logo img{
 	float:left;
+	height: 50px;
 	}
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
 ul li{
+  float: right;
+}
+
+ul li a{
   display: inline-block; 
   padding:10px;
-  font-size:16px; 
+  font-size:16px;
+  text-decoration: none;
+  color: white; 
   font-family:raleway;
 }
 
-ul li:hover{
+ul li a:hover{
   color: orange;
   
 }
-
-
-nav {
-	display: flex;
-}
-
 
 @media screen and (max-width: 500px) {
   .topnav a {
