@@ -1,7 +1,5 @@
 /* @group Nav Bar*/
 
-*{transition:all 0.3s ease-in-out;}
-
 #nav-wrapper {
     background: #57034A;
     width: 100%;
@@ -49,14 +47,6 @@
 }
 
 
-@media screen and (max-width: 500px) {
-  .topnav a {
-	float: none;
-	display: block;
-	width: 100%;
-  }
-}
-
 /* @end */
 
 
@@ -84,13 +74,6 @@ body {
 	background-color: #95057D;
 }
 
-#content {
-	background-color: #95057D;
-	display: block;
-	min-height: 300px;
-	max-width: 600px;
-	padding: 25px 65px 50px 210px;
-}
 
 p {
 	color: black;
