@@ -35,7 +35,7 @@ head {
     vertical-align: center;
     background-color: #57034A;
     width: 100%;
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 
@@ -71,19 +71,19 @@ head {
 /* @group Headers*/
 h1 {
 	font-family: Optima, sans-serif;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 
 h2 {
 	font-family: Optima, sans-serif;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 
 h3 {
 	font-family: Optima, sans-serif;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 /* @end */
@@ -93,14 +93,14 @@ h3 {
 
 body {
 	background-color: #95057D;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 
 p {
 	color: black;
 	font-family: Optima, sans-serif;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 /* @end */
