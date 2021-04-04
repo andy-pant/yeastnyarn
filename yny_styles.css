@@ -72,18 +72,21 @@ head {
 h1 {
 	font-family: Optima, sans-serif;
 	margin-left: 20px;
+	padding: 5px;
 }
 
 
 h2 {
 	font-family: Optima, sans-serif;
 	margin-left: 20px;
+	padding:  5px;
 }
 
 
 h3 {
 	font-family: Optima, sans-serif;
 	margin-left: 20px;
+	padding: 5px;
 }
 
 /* @end */
@@ -101,6 +104,7 @@ p {
 	color: black;
 	font-family: Optima, sans-serif;
 	margin-left: 20px;
+	padding: 5px;
 }
 
 /* @end */
