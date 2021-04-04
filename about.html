@@ -9,7 +9,113 @@
   <link rel="stylesheet" type="text/css" href="https://andy-pant.github.io/yeastnyarn/yny_styles.css">
 
   <style media="screen">
+@import "compass/css3";
 
+/* Variables */
+$color-1: black;
+$color-2: white;
+$color-3: rgb(168, 50, 121);
+
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+body {
+	font-family: Optima, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+/* Layout */
+* {
+  @include box-sizing(border-box);
+}
+
+/* Styling */
+.timeline {
+  margin: 4em auto;
+  position: relative;
+  max-width: 46em;
+  
+  &:before {
+    background-color: $color-1;
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
+  }
+}
+
+.timeline-event {
+  position: relative;
+  
+  &:hover {
+  
+    .timeline-event-icon {
+      @include rotate (-45deg);
+      background-color: $color-3;
+    }
+    
+    .timeline-event-thumbnail {
+      @include box-shadow(inset 40em 0 0 0 $color-3);
+    }
+  }
+}
+
+.timeline-event-copy {
+  padding: 2em;
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+  width: 80%;
+  
+  h3 {
+    font-size: 1.75em;
+  }
+  
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+  }
+  
+  strong {
+    font-weight: 700;
+  }
+  
+  p:not(.timeline-event-thumbnail) {
+    padding-bottom: 1.2em;
+  }
+}
+
+.timeline-event-icon {
+  @include transition(transform 0.2s ease-in);
+  @include rotate (45deg);
+  
+  background-color: $color-1;
+  outline: 10px solid $color-2;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+
+.timeline-event-thumbnail {
+  @include transition(box-shadow 0.5s ease-in 0.1s);
+  color: $color-2;
+  font-size: 0.75em;
+  
+  background-color: $color-1;
+  @include box-shadow(inset 0 0 0 0em #ef795a);
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.25em 1em 0.2em 1em;
+}
   </style>
 </head>
 
@@ -32,9 +138,68 @@
 
   <br>
   <h1>About</h1>
-
-
-  <br><br><br><br><br><br><br><br><br><br><br><br>
+<ul class="timeline">
+  <li class="timeline-event">
+    <label class="timeline-event-icon"></label>
+    <div class="timeline-event-copy">
+      <p class="timeline-event-thumbnail">Early 2000s</p>
+      <h3>A Knitter is Born</h3>
+      <p>Andrea's grandma teachers her how to crochet, and eventually knit.</p>
+      <h3>A Baker is Born</h3>
+      <p>Making rice krispy squares and lemon loaf with her grandma, blueberry muffins with her mom, are some of Andrea's fondest memories as a kid.</p>
+    </div>
+  </li>
+  <li class="timeline-event">
+    <label class="timeline-event-icon"></label>
+    <div class="timeline-event-copy">
+      <p class="timeline-event-thumbnail">December 2017</p>
+      <h3>Hang up the cleats, pick up the needles</h3>
+      <p>No longer able to play rugby, Andrea orders a knitting kit as an attempt at relaxing during a stressful time at work.</p>
+    </div>
+  </li>
+  <li class="timeline-event">
+    <label class="timeline-event-icon"></label>
+    <div class="timeline-event-copy">
+      <p class="timeline-event-thumbnail">2018 - 2020</p>
+      <h3>Tangle me up like grandma's yarn</h3>
+      <p>Knitting takes over Andrea's life (and living room). Starting with babywear for her many pregnant friends, she tries making toys too and eventually gets back into crochet as it's easier for toymaking.</p>
+    </div>
+  </li>
+  <li class="timeline-event">
+    <label class="timeline-event-icon"></label>
+    <div class="timeline-event-copy">
+      <p class="timeline-event-thumbnail">March 2020</p>
+      <h3>Lockdown</h3>
+      <p>Covid-19 pandemic starts sweeping through the world. New Zealand goes into lockdown. More knitting and crochet occurs. Thoughts of starting an etsy store creep in.</p>
+      <h3>A Starter is Born</h3>
+      <p>Stuck at home with little to do outside of work hours, Andrea jumps on the sourdough bandwagon. "Henrietta" - her hearty sourdough starter - is born.</p>
+    </div>
+  </li>
+  <li class="timeline-event">
+    <label class="timeline-event-icon"></label>
+    <div class="timeline-event-copy">
+      <p class="timeline-event-thumbnail">April - October 2020</p>
+      <h3>The New Normal</h3>
+      <p>Baking all the time. Mostly sourdough, but other baking too. Many lockdown / "post Covid" feelings are being eaten.</p>
+    </div>
+  </li>
+  <li class="timeline-event">
+    <label class="timeline-event-icon"></label>
+    <div class="timeline-event-copy">
+      <p class="timeline-event-thumbnail">October 2020</p>
+      <h3>Yeast n' Yarn</h3>
+      <p>Baking all the time. Mostly sourdough, but other baking too. Many lockdown / "post Covid" feelings are being eaten.</p>
+    </div>
+  </li>
+  <li class="timeline-event">
+    <label class="timeline-event-icon"></label>
+    <div class="timeline-event-copy">
+      <p class="timeline-event-thumbnail">November 2020</p>
+      <h3>Coding up a Storm</h3>
+      <p>Wanting to improve her web development skills for her duties managing the Royal Aeronautical Society's New Zealand website, Andrea starts up an online Udemy web development course. The bones of this website are born.</p>
+    </div>
+  </li>
+</ul>  
   </body>
 
   </html>
