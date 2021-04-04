@@ -9,17 +9,18 @@
   <link rel="stylesheet" type="text/css" href="https://andy-pant.github.io/yeastnyarn/yny_styles.css">
 
   <style media="screen">
+    
 @import "compass/css3";
 
 /* Variables */
-$color-1: white;
-$color-2: black;
+$color-1: black;
+$color-2: purple;
 $color-3: orange;
 
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
 body {
-  font-family: Optima, sans-serif;
+	font-family: Optima, sans-serif;
   font-size: 1em;
   font-weight: 300;
   line-height: 1.5;
@@ -36,6 +37,8 @@ body {
   margin: 4em auto;
   position: relative;
   max-width: 46em;
+  background-color: purple;
+  color: white;
   
   &:before {
     background-color: $color-1;
@@ -51,6 +54,7 @@ body {
 
 .timeline-event {
   position: relative;
+
   
   &:hover {
   
@@ -107,7 +111,7 @@ body {
 
 .timeline-event-thumbnail {
   @include transition(box-shadow 0.5s ease-in 0.1s);
-  color: $color-2;
+  color: white;
   font-size: 0.75em;
   
   background-color: $color-1;
