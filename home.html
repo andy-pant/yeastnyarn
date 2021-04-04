@@ -10,63 +10,83 @@
 
   <style media="screen">
 
-    .button {
-      border: none;
-      border-radius: 4px;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      transition-duration: 0.4s;
-    }
 
-    .button:hover {
-      border: 2px solid white;
-    }
+        .button_group {
+          text-align: center;
+        }
 
-    .button1 {
-      background-image: url("/images/about_button.png");
-      width: 30%;
-    }
 
-    .button2 {
-      background-image: url("/images/yeast_button.png");
-      width: 30%;
-    }
+        .button {
+          border: none;
+          border-radius: 4px;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          font-family: Optima, sans-serif;
+          margin: 4px 2px;
+          cursor: pointer;
+          transition-duration: 0.4s;
+        }
 
-    .button3 {
-      background-image: url("/images/yarn_button.png");
-      width:30%;
-    }
+        .button:hover {
+          border: 2px solid white;
+        }
+
+        .button1 {
+          background-image: url("https://andy-pant.github.io/yeastnyarn/images/about_button.jpg");
+          width: 30%;
+          height: 100%;
+          background-size: 100%;
+        }
+
+        .button2 {
+          background-image: url("https://andy-pant.github.io/yeastnyarn/images/yeast_button.JPG");
+          width: 30%;
+          background-size: cover;
+        }
+
+        .button3 {
+          background-image: url("https://andy-pant.github.io/yeastnyarn/images/yarn_button.JPG");
+          width:30%;
+          background-size: cover;
+        }
 
   </style>
 </head>
 
 <body>
+  <div id="nav-wrapper">
+  	<div class="logo">
+  		<a href="home.html" class="brand-logo"><img src="https://andy-pant.github.io/yeastnyarn/images/yny_logo.png" alt="Yeast n' Yarn logo" width=300px></a>
+  	</div>
+  	<nav class="menu">
+      <ul>
+        <li><a class="active" href="home.html">{ Home }</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="yeast.html">Yeast</a></li>
+        <li><a href="yarn.html">Yarn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </div>
 
-  <nav>
-    <img class="logo" src="images/yny_logo.png" alt="Yeast n' Yarn logo">
-    <ul class="topnav"
-      <li><a class="active" href="home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="yeast.html">Yeast</a></li>
-      <li><a href="yarn.html">Yarn</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  
-<h1>Welcome to Yeast n' Yarn</h1>
-<p>A personal blog that captures the yummy, yarny creations of founder Andrea Wadsworth.</p>
 
-<!Buttons>
-<p>Find out more information below:</p>
-<button type="button" class="button button1">About</button>
-<button type="button" class="button button2">Yeast</button>
-<button type="button" class="button button3">Yarn</button>
+  <div class=content>
+  <br>
+  <h1>Welcome to Yeast n' Yarn</h1>
+  <p>A personal blog that captures the yummy, yarny creations of founder Andrea Wadsworth.</p>
 
-</body>
+  <p>Find out more information below:</p>
+  <div class="button_group">
+    <button type="button" class="button button1">About</button>
+    <button type="button" class="button button2">Yeast</button>
+    <button type="button" class="button button3">Yarn</button>
+  </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  </body>
 
-</html>
+  </html>
