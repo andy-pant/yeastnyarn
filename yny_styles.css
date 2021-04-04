@@ -1,7 +1,6 @@
 *
 {
 	margin: 0;
-	padding: 0;
 }
 
 
@@ -9,6 +8,8 @@
 
 head {
 	background: #57034A;
+	margin-left: 0;
+	margin-top: 0;
 }
 
 #nav-wrapper {
@@ -59,7 +60,7 @@ head {
 
 .menu a.active{
   color:orange;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 
@@ -69,16 +70,19 @@ head {
 /* @group Headers*/
 h1 {
 	font-family: Optima, sans-serif;
+	margin-left: 10px;
 }
 
 
 h2 {
 	font-family: Optima, sans-serif;
+	margin-left: 10px;
 }
 
 
 h3 {
 	font-family: Optima, sans-serif;
+	margin-left: 10px;
 }
 
 /* @end */
@@ -88,12 +92,14 @@ h3 {
 
 body {
 	background-color: #95057D;
+	margin-left: 10px;
 }
 
 
 p {
 	color: black;
 	font-family: Optima, sans-serif;
+	margin-left: 10px;
 }
 
 /* @end */
