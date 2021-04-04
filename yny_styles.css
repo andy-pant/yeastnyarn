@@ -1,4 +1,15 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
 /* @group Nav Bar*/
+
+head {
+	background: #57034A;
+}
 
 #nav-wrapper {
     background: #57034A;
@@ -31,7 +42,7 @@
     text-decoration: none;
     list-style-type: none;
     float: left;
-    padding: 10px;
+    width: 20%;
 
 }
 
@@ -42,8 +53,13 @@
 }
 
 
-.menu a:hover, a.active{
+.menu a:hover {
   color:orange;
+}
+
+.menu a.active{
+  color:orange;
+  font-weight: bold;
 }
 
 
