@@ -10,51 +10,54 @@
 
   <style media="screen">
 
+    .button_group {
+        text-align: center;
+    }
 
-        .button_group {
-          text-align: center;
-        }
+    .button {
+        border: none;
+        border-radius: 4px;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: Optima, sans-serif;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        width: 30%;
+        height: 200px;
+        background-size: 100%;
+    }
 
 
-        .button {
-          border: none;
-          border-radius: 4px;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          font-family: Optima, sans-serif;
-          margin: 4px 2px;
-          cursor: pointer;
-          transition-duration: 0.4s;
-        }
+    .button:hover {
+        border: 2px solid white;
+    }
 
-        .button:hover {
-          border: 2px solid white;
-        }
 
-        .button1 {
-          background-image: url("https://andy-pant.github.io/yeastnyarn/images/about_button.jpg");
-          width: 30%;
-          height: 100%;
-          background-size: 100%;
-        }
+    .button1 {
+        background-image: url("https://andy-pant.github.io/yeastnyarn/images/about_button.jpg");
+        color: white;
+    }
 
-        .button2 {
-          background-image: url("https://andy-pant.github.io/yeastnyarn/images/yeast_button.JPG");
-          width: 30%;
-          background-size: cover;
-        }
 
-        .button3 {
-          background-image: url("https://andy-pant.github.io/yeastnyarn/images/yarn_button.JPG");
-          width:30%;
-          background-size: cover;
-        }
+    .button2 {
+        background-image: url("https://andy-pant.github.io/yeastnyarn/images/yeast_button.JPG");
+        color: black;
+    }
+
+
+    .button3 {
+        background-image: url("https://andy-pant.github.io/yeastnyarn/images/yarn_button.JPG");
+        color: black;
+    }
 
   </style>
-  
+</head>
+
+<body>
   <div id="nav-wrapper">
   	<div class="logo">
   		<a href="home.html" class="brand-logo"><img src="https://andy-pant.github.io/yeastnyarn/images/yny_logo.png" alt="Yeast n' Yarn logo" width=300px></a>
@@ -70,10 +73,7 @@
     </nav>
     <hr>
   </div>
-  
-</head>
 
-<body>
   <br>
   <h1>Welcome to Yeast n' Yarn</h1>
   <p>A personal blog that captures the yummy, yarny creations of founder Andrea Wadsworth.</p>
@@ -84,7 +84,7 @@
     <button type="button" class="button button2">Yeast</button>
     <button type="button" class="button button3">Yarn</button>
   </div>
-  </div>
+
   <br><br><br><br><br><br><br><br><br><br><br><br>
   </body>
 
