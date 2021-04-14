@@ -24,13 +24,13 @@ head {
 }
 
     
-.logo {
+#logo {
 	text-align: centre;
     width: 300px;
 }
 
 
-.menu {
+#menu {
 	flex: 1;
     float:right;
     vertical-align: center;
@@ -40,7 +40,7 @@ head {
 }
 
 
-.menu ul li {
+#menu ul li {
     display: inline-block;
     text-decoration: none;
     font-family: Optima, sans-serif;
@@ -50,7 +50,7 @@ head {
 
 }
 
-.menu a {
+#menu a {
 	    text-decoration: none;
 	 font-family: Optima, sans-serif;
         font-size: 24px;
@@ -58,11 +58,11 @@ head {
 }
 
 
-.menu a:hover {
+#menu a:hover {
   color:orange;
 }
 
-.menu a.active{
+#menu a.active{
   color:orange;
   font-weight: bold;
 }
