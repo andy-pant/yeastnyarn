@@ -21,6 +21,7 @@ head {
     justify-content: center;
     align-items: center;
     margin-left: 0;
+    font-family: Optima, sans-serif;
 }
 
     
@@ -41,8 +42,9 @@ head {
 
 
 .menu ul li {
-	display: inline-block;
+    display: inline-block;
     text-decoration: none;
+    font-family: Optima, sans-serif;
     list-style-type: none;
     float: left;
     width: 20%;
@@ -63,7 +65,7 @@ head {
 
 .menu a.active{
   color:orange;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 
