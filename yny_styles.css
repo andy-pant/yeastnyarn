@@ -75,6 +75,7 @@ head {
 /* @group Headers*/
 h1 {
 	font-family: Optima, sans-serif;
+	text-align: centre;
 	margin-left: 20px;
 	padding: 5px;
 }
