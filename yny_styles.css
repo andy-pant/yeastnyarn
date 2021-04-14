@@ -8,8 +8,7 @@
 
 head {
 	background: #57034A;
-	margin-left: 0;
-	margin-top: 0;
+	margin: -1px;
 }
 
 #nav-wrapper {
